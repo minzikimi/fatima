@@ -1,0 +1,106 @@
+.gift-info{
+  background-color: #F2F1E9;
+  display: flex;
+  gap:3rem;
+  align-items: center;
+  justify-content: center;
+  padding:4rem;
+  font-family: var(--font-main);
+  letter-spacing: 0.3;
+
+  img{
+    width: 300px;
+  }
+
+  .gift-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3rem
+  }
+
+  .gift-text{
+    text-align: center;
+  }
+}
+
+.hero-gif{
+  width: 1200px;
+  height:450px;
+  position: relative;
+}
+
+.winter-collection-text{
+  width: 300px;
+  position: absolute;
+  left:450px;
+  bottom:300px;
+  z-index:100;
+  font-family: var(--font-highlight);
+  color:white;
+  font-size:5rem;
+}
+
+.winter-collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding-top:1rem;
+}
+
+.winter-collection-item {
+  position: relative;
+  overflow: hidden;
+
+  transition: transform 0.3s ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+}
+
+.winter-collection-item:hover {
+  transform: scale(1.05);
+}
+
+.winter-collection-item:hover .overlay {
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.459);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: var(--font-main);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-gif {
+      width: 100%;
+      height: auto;
+  }
+  .winter-collection-text {
+      font-size: 3rem;
+      left: 20px;
+      bottom: 50px;
+  }
+}

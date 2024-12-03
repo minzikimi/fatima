@@ -1,0 +1,130 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta name="description" content="Discover the latest in fashion with Bloom's Winter Collection FW 24. Enjoy free delivery on orders over 500kr!">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bloom</title>
+        <link rel="stylesheet" href="/base-css//base.css">
+    
+        <link rel="stylesheet" href="/base-css//hero.css">
+        <script src="/js/modal.js" defer></script>
+  
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="delivery-info">
+                <h4>Delivery 1-3 days | Free delivery over 500kr</h4>
+            </div>
+            
+            <nav class="main-nav">
+                <div class="nav-links-container">
+                    <div class="nav-links-wrapper">
+                        <ul>
+                            <li><a href="./pages/about-us/aboutus.html">About us</a></li>
+                            <li><a href="./pages/product-listing/listing.html">Shop</a></li>
+                            <li><a href="./pages/contact-us/contactus.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="logo">
+                  <a href="/index.html" id="bloom">Bloom</a>
+                </div>
+    
+    
+                <div class="nav-icons">
+                    <a href="#" class="icon-link" id="login-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="icon-link" id="shopping-cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  width="24" height="24"><path d="M96 152l0 8-48 0 0-8C48 68.1 116.1 0 200 0l48 0c83.9 0 152 68.1 152 152l0 8-48 0 0-8c0-57.4-46.6-104-104-104l-48 0C142.6 48 96 94.6 96 152zM0 224c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-5.1 0L388.5 469c-2.6 24.4-23.2 43-47.7 43l-233.6 0c-24.6 0-45.2-18.5-47.7-43L37.1 256 32 256c-17.7 0-32-14.3-32-32z"/></svg>
+                    </a>
+                </div>
+            </nav>     
+        </header>
+
+    <main>
+        <!-- Main content will go here -->
+      <div class="container">
+        <section class="hero-section">
+          <img class="hero-gif" src="assets/img/heropage-img/hero.gif">
+          <h2 class="winter-collection-text">WINTER COLLECTION FW 24</h2>
+        </section>
+        <section class="hero-section winter-collection-grid">
+          <div class="winter-collection-item">
+            <img class="winter-collection" src="assets/img/heropage-img/jewerly.png" alt="Jewelry">
+            <div class="overlay">
+              <div class="text">Jewelry</div>
+            </div>
+          </div>
+          <div class="winter-collection-item">
+            <img class="winter-collection" src="assets/img/heropage-img/menswear.jpg" alt="Menswear">
+            <div class="overlay">
+              <div class="text">Clothing</div>
+            </div>
+          </div>
+          <div class="winter-collection-item">
+            <img class="winter-collection" src="assets/img/heropage-img/electronic.jpg" alt="Electronics">
+            <div class="overlay">
+              <div class="text">Electronics</div>
+            </div>
+          </div>
+          <div class="winter-collection-item">
+            <img class="winter-collection" src="assets/img/heropage-img/backpack.jpg" alt="Backpacks">
+            <div class="overlay">
+              <div class="text">Accessories</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="#" id="bloom">Bloom</a>
+          <p class="footer-slogan">Convenience Redefined, Online</p>
+        </div>
+        <div class="footer-center">
+          <div class="footer-links">
+            <a href="./pages/about-us/aboutus.html"class="footer-link">About us</a>
+            <a href="./pages/product-listing/listing.html" class="footer-link">Shop</a>
+            <a href="./pages/contact-us/contactus.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-link"  >Instagram</a>
+            <a href="#" class="footer-social-link">TikTok</a>
+            <a href="#" class="footer-social-link">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 BLOOM. All rights reserved.</p>
+      </div>
+    </footer>
+
+
+
+  <!-- Login Modal -->
+  <dialog id="loginModal" class="modal">
+    <div class="modal-content">
+        <h2 class="login-title">Login</h2>
+        <form class="login-form" method="dialog">
+            <input type="email" class="form-control" placeholder="Email" required>
+            <input type="password" class="form-control" placeholder="Password" required>
+            <button type="submit" class="btn btn-dark">Log In</button>
+        </form>
+        <p>Don't have an account? <a href="/pages/sign-up/signup.html">Sign up</a></p>
+        <button class="close-button" aria-label="Close modal">&times;</button>
+    </div>
+  </dialog>
+
+ 
+
+  </body>
+  </html>
