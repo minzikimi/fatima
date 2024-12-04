@@ -28,7 +28,7 @@
   }
 }
 
-#category-filter, #rating-filter {
+#category-filter, #rating-filter, #price-filter {
   padding: 0.5rem;
   font-family: var(--font-nav);
   border: 1px solid var(--accent-color);
@@ -84,6 +84,21 @@
 
 .product-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#shopping-cart-icon {
+  position: relative;
+}
+
+#shopping-cart-icon::after {
+  content: attr(data-count);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px;
 }
 
 

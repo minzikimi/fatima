@@ -58,9 +58,11 @@
         <select id="category-filter">
             <option value="all">All Categories</option>
             <option value="electronics">Electronics</option>
-            <option value="clothing">Clothing</option>
-            <option value="Jewelry">Jewelry</option>
-            <option value="Accessory">Accessory</option>
+            <!-- <option value="clothing">Clothing</option> -->
+            <option value="Jewelery">Jewelry</option>
+            <!-- <option value="Accessory">Accessories</option> -->
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
         </select>
       </div>
      
@@ -74,9 +76,20 @@
             <option value="1">1 Star & Up</option>
         </select>
       </div>
+      <div>
+        <label for="price-filter">Filter by Price:</label>
+        <select id="price-filter">
+          <option value="all">All Prices</option>
+          <option value="0-50">$0 - $50</option>
+          <option value="50-100">$50 - $100</option>
+          <option value="100-200">$100 - $200</option>
+          <option value="200-">$200+</option>
+        </select>
+      </div>
     
 
     </div>
+    <div id="basket-container"></div>
 
   <div class="product-grid" id="product-grid"></div>
 
